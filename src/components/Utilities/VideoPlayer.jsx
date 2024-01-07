@@ -21,7 +21,7 @@ const VideoPlayer = ({ youtubeId, thumbnail }) => {
     const Player = () => {
         return (
             // <div className="fixed bottom-0 right-0"></div>
-            <div className="fixed bottom-0 right-0">
+            <div className="fixed bottom-0 right-0 z-10">
                 <button 
                     onClick={handleVideoPlayer}
                     className="float-right p-2">

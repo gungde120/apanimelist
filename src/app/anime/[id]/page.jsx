@@ -96,7 +96,8 @@ const Page = async({params : {id}}) => {
                             )}
                         </div>
                         <div className="h-10 flex text-sm px-3 py-2 border border-color-accent rounded-lg">
-                            <p>{anime.type} ({anime.episodes ? anime.episodes : "1"} eps)</p>
+                            <p>{anime.type} {anime.episodes > 1 ? 
+                            (`(${anime.episodes} eps)`) : null}</p>
                         </div>
                         <div className="h-10 flex text-sm px-3 py-2 border border-color-accent rounded-lg">
                             {anime.members.toLocaleString()} members
