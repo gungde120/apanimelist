@@ -25,7 +25,7 @@ const VideoPlayer = ({ youtubeId, thumbnail }) => {
                 <button 
                     onClick={handleVideoPlayer}
                     className="float-right p-2">
-                    <XCircle size={32} weight="fill"/>
+                    <XCircle size={36} weight="fill"/>
                 </button>
                 <YouTube 
                     videoId={youtubeId}

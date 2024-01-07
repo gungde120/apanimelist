@@ -29,7 +29,7 @@ const ShowCollectionButton = async ({anime, user}) => {
                             <CollectionButton
                                 anime_mal_id={anime.mal_id.toString()}
                                 user_email={user.email}
-                                anime_image={anime.images.webp.image_url}
+                                anime_image={anime.images.jpg.large_image_url}
                                 anime_title={anime.title}
                             />
                         </div>

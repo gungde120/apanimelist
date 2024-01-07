@@ -110,10 +110,10 @@ const Page = async({params : {id}}) => {
                     <Image 
                         className="rounded-lg object-cover lg:w-64 md:w-64 sm:w-64 w-full justify-center items-center
                         shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]" 
-                        src={anime.images.webp.image_url} 
-                        alt={anime.images.jpg.image_url}
-                        width={300} 
-                        height={350}
+                        src={anime.images.jpg.large_image_url} 
+                        alt={anime.images.webp.large_image_url}
+                        width={600} 
+                        height={800}
                     />
                     
                     <VideoPlayer youtubeId={anime.trailer.youtube_id} thumbnail={anime.trailer.images.large_image_url}/>
