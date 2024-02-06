@@ -9,10 +9,10 @@ const AnimeList = ({ api , user }) => {
         <div className="grid lg:grid-cols-5 md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 pb-4">
         {api.data?.sort((a, b) => a.rank - b.rank).map((anime, index) => (
             <Link href={`/anime/${anime.mal_id}`} className="relative group" key={index}>
-            <div className="group-hover:opacity-100 opacity-0 absolute right-3 top-3 transition-all">
+            {/* <div className="group-hover:opacity-100 opacity-0 absolute right-3 top-3 transition-all">
                 {user &&  <ShowCollectionButton anime={anime} user={user}/>
                 }
-            </div>
+            </div> */}
 
             <div className="cursor-pointer transition-all hover:bg-color-dark hover:text-color-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg">
                 <div className="flex flex-row justify-between">
